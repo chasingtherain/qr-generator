@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project name</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src ="script.js" type="module" defer></script>
+</head>
+<body>
+    <h1>Generate your own QR code</h1>
+    <img src="/img/qr generator.png"/>
+    <br>
+    <br>
+    <br>
+    <textarea rows="4" cols="45" placeholder="Input your URL here"></textarea>
+    <br>
+    <label for="cars">Choose a size:</label>
+    <select onchange="getSize()" id="size">
+      <option value="150x150">Small</option>
+      <option value="300x300">Medium</option>
+      <option value="500x500">Large</option>
+      <option value="800x800">Are you sure?</option>
+    </select>
+    
+    <br>
+    <br>
+    <br>
+
+    <button id="generate">Generate</button>
+    <p id = "note"> </p>
+    <br>
+
+</body>
+</html>
